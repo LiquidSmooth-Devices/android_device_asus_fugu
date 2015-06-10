@@ -40,6 +40,9 @@ BOARD_FLASH_BLOCK_SIZE := 2048
 TARGET_DROIDBOOT_LIBS := libintel_droidboot
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
+# Disables SuperSu in Twrp (Fixes build error)
+TW_EXCLUDE_SUPERSU := true
+
 # Use dlmalloc
 MALLOC_IMPL := dlmalloc
 
